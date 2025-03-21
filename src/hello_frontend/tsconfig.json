@@ -25,6 +25,8 @@
     "useDefineForClassFields": true
   },
   "include": [
-    "src"
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./**/*.d.ts"
   ]
 }
