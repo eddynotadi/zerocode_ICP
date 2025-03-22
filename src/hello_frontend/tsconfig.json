@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
@@ -12,7 +12,7 @@
       "ESNext"
     ],
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -27,6 +27,12 @@
   "include": [
     "./**/*.ts",
     "./**/*.tsx",
-    "./**/*.d.ts"
+    "./**/*.js",
+    "./**/*.jsx",
+    "../declarations/**/*.ts",
+    "../declarations/**/*.js"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
